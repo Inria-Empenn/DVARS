@@ -1,0 +1,23 @@
+[project]
+name = "DVARS"
+version = "1.2.0"
+authors = [
+    {name = "Afyouni Soroosh"},
+    {name = "Thomas E. Nichols"}
+]
+description = "Insight & Inference for DVARS: 3-part variance decomposition, gives units & p-values to DVARS measures as well as spatiotemporal rs-fMRI diagnostic."
+readme = "README.md"
+requires-python = ">=3.8, <3.12"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy>=1.23.4, <1.24",
+    "nibabel>=4.0.2, <4.1",
+    "scipy>=1.9.3, <1.10"
+]
+
+[tool.setuptools]
+package-dir = {"" = "Python"}
+packages = ["DVARS"]
